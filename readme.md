@@ -2,10 +2,15 @@
 
 ## Folders:
 `build/` is the temporary folder for building
+
 `include/` has the header files
+
 `src/` has the source files
+
 `data/` has the input files for the labyrinth
+
 `tests/` will store the test source files
+
 `doc/` will have the generated documentation
 
 ## Building:
