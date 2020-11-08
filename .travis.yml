@@ -1,0 +1,12 @@
+language: c++
+sudo: false
+install: make
+
+addons:
+  apt:
+    packages:
+      - valgrind
+
+compiler: g++
+
+
