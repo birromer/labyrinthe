@@ -11,6 +11,6 @@ file(
 )
 
 add_executable(
-    main_exe
+    td5
     ${source_files}
 )

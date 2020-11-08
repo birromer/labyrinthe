@@ -1,4 +1,4 @@
-#include "Cell.h"
+#include "../include/Cell.h"
 #include <iostream>
 
 Cell::Cell(int x, int y) : m_x(x), m_y(y) {

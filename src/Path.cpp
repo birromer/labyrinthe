@@ -1,4 +1,4 @@
-#include "Path.h"
+#include "../include/Path.h"
 
 Path::Path(const Cell *c) : m_c(c) {
 

@@ -5,9 +5,9 @@
 #include <list>
 #include <limits>
 
-#include "vibes.h" // might need to change those includes
-#include "Cell.h"
-#include "Path.h"
+#include "../include/vibes.h" // might need to change those includes
+#include "../include/Cell.h"
+#include "../include/Path.h"
 
 struct Maze {
     Cell *init;  // the whole graph can be explored having the root
@@ -76,7 +76,7 @@ int main() {
 
     Maze maze = create_maze(c13,c14);
 
-    save_maze(maze, "td4_maze.txt");  // save the maze on a file
+    save_maze(maze, "../data/td4_maze.txt");  // save the maze on a file
 
     display(maze);
 
@@ -113,19 +113,19 @@ int main() {
     vibes::newFigure("Maze4");
     vibes::setFigureProperties("Maze4", vibesParams("x", 100, "y", 100, "width", 400, "height", 400));
     vibes::axisLimits(0-0.5, 4+0.5, 0-0.5, 4+0.5);
-    Maze maze4 = read_maze("laby4x4.txt");
+    Maze maze4 = read_maze("../data/laby4x4.txt");
     display(maze4);
 
     vibes::newFigure("Maze8");
     vibes::setFigureProperties("Maze8", vibesParams("x", 100, "y", 100, "width", 400, "height", 400));
     vibes::axisLimits(0-0.5, 8+0.5, 0-0.5, 8+0.5);
-    Maze maze8 = read_maze("laby8x8.txt");
+    Maze maze8 = read_maze("../data/laby8x8.txt");
     display(maze8);
 
     vibes::newFigure("Maze10");
     vibes::setFigureProperties("Maze10", vibesParams("x", 100, "y", 100, "width", 400, "height", 400));
     vibes::axisLimits(0-0.5, 10+0.5, 0-0.5, 10+0.5);
-    Maze maze10 = read_maze("laby10x10.txt");
+    Maze maze10 = read_maze("../data/laby10x10.txt");
     display(maze10);
     // -------------- END activity C ---------------------
 
@@ -139,7 +139,7 @@ Maze read_maze(const std::string& file_name) {
     // each element will be referenced by a pair <int, int>
     // and will store the cell and a list of pairs (the neighbours),
     // a list is used because the number of neighbours is fixed and all reads/writes will be sequential
-    std::map<std::pair<int,int>, std::pair<Cell*, std::list<std::pair<int,int>>>> m_cells; 
+    std::map<std::pair<int,int>, std::pair<Cell*, std::list<std::pair<int,int>>>> m_cells;
     float init_x, init_y, end_x, end_y;
 
     std::getline(f, tmp);  // # Start: line
@@ -174,7 +174,7 @@ Maze read_maze(const std::string& file_name) {
     }
     f.close();
 
-    // creates maze 
+    // creates maze
     Maze maze = create_maze(m_cells[std::make_pair(init_x, init_y)].first, m_cells[std::make_pair(end_x, end_y)].first); // sets root and finish cell
 
     for (auto it = m_cells.begin(); it != m_cells.end(); it++) {
@@ -223,8 +223,8 @@ void save_maze(const Maze& maze, const std::string& file_name) {
         f << *maze.init << std::endl;
 
         f << "# Cells:" << std::endl;
-        Cell *cell = maze.init;  // gets starting cell of the maze 
-        save_cells(cell, &f);    // start saving the cells by the initial cell 
+        Cell *cell = maze.init;  // gets starting cell of the maze
+        save_cells(cell, &f);    // start saving the cells by the initial cell
     }
 
     f.close();
