@@ -4,11 +4,11 @@ os: linux
 dist: bionic
 
 before_script:
-  - git clone https://github.com/catchorg/Catch2.git
-  - cd Catch2
-  - cmake -Bbuild -H. -DBUILD_TESTING=OFF
-  - sudo cmake --build build/ --target install
-  - cd ..
+  #  - git clone https://github.com/catchorg/Catch2.git
+  #  - cd Catch2
+  #  - cmake -Bbuild -H. -DBUILD_TESTING=OFF
+  #  - sudo cmake --build build/ --target install
+  #  - cd ..
   - sudo ln -s /usr/bin/gcc-6 /usr/local/bin/gcc
   - sudo ln -s /usr/bin/g++-6 /usr/local/bin/g++
   - export CC=/usr/bin/gcc-6
