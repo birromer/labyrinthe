@@ -1,7 +1,7 @@
 language: cpp
 compiler: gcc
 os: linux
-dist: trusty
+dist: bionic
 
 before_script:
   - sudo ln -s /usr/bin/gcc-6 /usr/local/bin/gcc
