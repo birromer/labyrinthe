@@ -13,7 +13,15 @@ add_executable(tests
     tests_lab.cpp
 )
 
-find_package(Catch2 REQUIRED)
+include(FetchContent)
+
+FetchContent_Declare(
+    Catch2
+    GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+    GIT_TAG        v2.13.1)
+
+FetchContent_MakeAvailable(Catch2)
+
 target_link_libraries(tests Catch2::Catch2)
 
 include(CTest)

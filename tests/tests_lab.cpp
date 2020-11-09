@@ -24,8 +24,9 @@
 //#include "Catch2/src/catch2/catch_translate_exception.hpp"
 //#include "Catch2/src/catch2/catch_totals.hpp"
 
-//#include "catch2/catch_amalgamated.hpp"
 #include <catch2/catch.hpp>
+
+//#include "catch2/catch_amalgamated.hpp"
 
 #define protected public
 
