@@ -1,7 +1,7 @@
 language: cpp
 compiler: gcc
 os: linux
-dist: rusty
+dist: trusty
 sudo: require
 
 before_script:
