@@ -11,6 +11,19 @@
 #include "../include/Cell.h"
 #include "../include/Path.h"
 
+//#include "Catch2/src/catch2/catch_test_macros.hpp"
+//#include "Catch2/src/catch2/catch_test_case_info.hpp"
+//#include "Catch2/src/catch2/catch_template_test_macros.hpp"
+//#include "Catch2/src/catch2/catch_tag_alias.hpp"
+//#include "Catch2/src/catch2/catch_tag_alias_autoregistrar.hpp"
+//#include "Catch2/src/catch2/catch_session.hpp"
+//#include "Catch2/src/catch2/catch_section_info.hpp"
+//#include "Catch2/src/catch2/catch_all.hpp"
+//#include "Catch2/src/catch2/catch_version_macros.hpp"
+//#include "Catch2/src/catch2/catch_version.hpp"
+//#include "Catch2/src/catch2/catch_translate_exception.hpp"
+//#include "Catch2/src/catch2/catch_totals.hpp"
+
 //#include "catch2/catch_amalgamated.hpp"
 #include <catch2/catch.hpp>
 

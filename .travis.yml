@@ -26,3 +26,4 @@ addons:
       - g++-6
       - cmake
       - valgrind
+      - catch2
