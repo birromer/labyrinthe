@@ -1,16 +1,8 @@
 language: cpp
-compiler: g++
-
-before_install:
-  # g++4.8.1
-  - if [ "$CXX" == "g++" ]; then sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test; fi
-
-  - sudo apt-get update -qq
-
-install:
-  # g++4.8.1
-  - if [ "$CXX" = "g++" ]; then sudo apt-get install -qq g++-4.8; fi
-  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8"; fi
+compiler: gcc
+os: linux
+dist: rusty
+sudo: require
 
 before_script:
   - mkdir build
@@ -22,9 +14,10 @@ script:
 
 addons:
   apt:
+    sources:
+      - ubuntu-toolchain-r-test
     packages:
+      - gcc-6
+      - g++-6
+      - cmake
       - valgrind
-
-compiler: g++
-
-
