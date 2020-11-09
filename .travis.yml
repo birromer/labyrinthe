@@ -9,10 +9,10 @@ before_script:
   #  - cmake -Bbuild -H. -DBUILD_TESTING=OFF
   #  - sudo cmake --build build/ --target install
   #  - cd ..
-  - sudo ln -s /usr/bin/gcc-6 /usr/local/bin/gcc
-  - sudo ln -s /usr/bin/g++-6 /usr/local/bin/g++
-  - export CC=/usr/bin/gcc-6
-  - export CXX=/usr/bin/g++-6
+  #  - sudo ln -s /usr/bin/gcc-6 /usr/local/bin/gcc
+  #  - sudo ln -s /usr/bin/g++-6 /usr/local/bin/g++
+  #  - export CC=/usr/bin/gcc-6
+  #  - export CXX=/usr/bin/g++-6
   - gcc -v && g++ -v && cmake --version
 
 script:
@@ -27,8 +27,8 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - gcc-6
-      - g++-6
+      - gcc
+      - g++
       - cmake
       - valgrind
         #      - catch2
