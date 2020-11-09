@@ -1,7 +1,7 @@
 language: cpp
 compiler: gcc
 os: linux
-dist: bionic
+dist: focal
 
 before_script:
   #  - git clone https://github.com/catchorg/Catch2.git
