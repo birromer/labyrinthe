@@ -1,7 +1,9 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.5)
 project(tests)
 
-set(cmake_build_type debug)
+enable_testing()
+
+#set(cmake_build_type debug)
 set(cmake_cxx_flags "-Wall -Wextra -std=c++11")
 
 add_executable(tests
@@ -11,3 +13,9 @@ add_executable(tests
     ../src/vibes.cpp
     tests_lab.cpp
 )
+
+include(CTest)
+include(./Catch.cmake)
+include(./ParseAndAddCatchTests.cmake)
+ParseAndAddCatchTests(tests)
+#catch_discover_tests(tests)
