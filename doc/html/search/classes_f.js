@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['randomfloatinggenerator_498',['RandomFloatingGenerator',['../classCatch_1_1Generators_1_1RandomFloatingGenerator.html',1,'Catch::Generators']]],
+  ['randomintegergenerator_499',['RandomIntegerGenerator',['../classCatch_1_1Generators_1_1RandomIntegerGenerator.html',1,'Catch::Generators']]],
+  ['rangegenerator_500',['RangeGenerator',['../classCatch_1_1Generators_1_1RangeGenerator.html',1,'Catch::Generators']]],
+  ['redirectedstderr_501',['RedirectedStdErr',['../classCatch_1_1RedirectedStdErr.html',1,'Catch']]],
+  ['redirectedstdout_502',['RedirectedStdOut',['../classCatch_1_1RedirectedStdOut.html',1,'Catch']]],
+  ['redirectedstream_503',['RedirectedStream',['../classCatch_1_1RedirectedStream.html',1,'Catch']]],
+  ['redirectedstreams_504',['RedirectedStreams',['../classCatch_1_1RedirectedStreams.html',1,'Catch']]],
+  ['regexmatcher_505',['RegexMatcher',['../structCatch_1_1Matchers_1_1StdString_1_1RegexMatcher.html',1,'Catch::Matchers::StdString']]],
+  ['registrarfortagaliases_506',['RegistrarForTagAliases',['../structCatch_1_1RegistrarForTagAliases.html',1,'Catch']]],
+  ['repeater_507',['repeater',['../structCatch_1_1Benchmark_1_1Detail_1_1repeater.html',1,'Catch::Benchmark::Detail']]],
+  ['repeatgenerator_508',['RepeatGenerator',['../classCatch_1_1Generators_1_1RepeatGenerator.html',1,'Catch::Generators']]],
+  ['reporterconfig_509',['ReporterConfig',['../structCatch_1_1ReporterConfig.html',1,'Catch']]],
+  ['reporterpreferences_510',['ReporterPreferences',['../structCatch_1_1ReporterPreferences.html',1,'Catch']]],
+  ['reporterregistrar_511',['ReporterRegistrar',['../classCatch_1_1ReporterRegistrar.html',1,'Catch']]],
+  ['reporterregistry_512',['ReporterRegistry',['../classCatch_1_1ReporterRegistry.html',1,'Catch']]],
+  ['resultbase_513',['ResultBase',['../classCatch_1_1clara_1_1detail_1_1ResultBase.html',1,'Catch::clara::detail::ResultBase'],['../classclara_1_1detail_1_1ResultBase.html',1,'clara::detail::ResultBase']]],
+  ['resultdisposition_514',['ResultDisposition',['../structCatch_1_1ResultDisposition.html',1,'Catch']]],
+  ['resultvaluebase_515',['ResultValueBase',['../classclara_1_1detail_1_1ResultValueBase.html',1,'clara::detail::ResultValueBase&lt; T &gt;'],['../classCatch_1_1clara_1_1detail_1_1ResultValueBase.html',1,'Catch::clara::detail::ResultValueBase&lt; T &gt;']]],
+  ['resultvaluebase_3c_20void_20_3e_516',['ResultValueBase&lt; void &gt;',['../classCatch_1_1clara_1_1detail_1_1ResultValueBase_3_01void_01_4.html',1,'Catch::clara::detail::ResultValueBase&lt; void &gt;'],['../classclara_1_1detail_1_1ResultValueBase_3_01void_01_4.html',1,'clara::detail::ResultValueBase&lt; void &gt;']]],
+  ['resultwas_517',['ResultWas',['../structCatch_1_1ResultWas.html',1,'Catch']]],
+  ['reusablestringstream_518',['ReusableStringStream',['../classCatch_1_1ReusableStringStream.html',1,'Catch']]],
+  ['runcontext_519',['RunContext',['../classCatch_1_1RunContext.html',1,'Catch']]],
+  ['runtests_520',['RunTests',['../structCatch_1_1RunTests.html',1,'Catch']]]
+];

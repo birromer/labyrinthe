@@ -1,0 +1,52 @@
+\hypertarget{classvibes_1_1Value}{}\doxysection{vibes\+::Value Class Reference}
+\label{classvibes_1_1Value}\index{vibes::Value@{vibes::Value}}
+
+
+{\ttfamily \#include $<$vibes.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvibes_1_1Value_a4484927bdccc0eb7f297f99946430bb7}\label{classvibes_1_1Value_a4484927bdccc0eb7f297f99946430bb7}} 
+{\bfseries Value} (int i)
+\item 
+\mbox{\Hypertarget{classvibes_1_1Value_a21e69d0bfd4ee4fc0f702daba547a032}\label{classvibes_1_1Value_a21e69d0bfd4ee4fc0f702daba547a032}} 
+{\bfseries Value} (const double \&d)
+\item 
+\mbox{\Hypertarget{classvibes_1_1Value_ae71ae2556d8f7fa0826864785569075f}\label{classvibes_1_1Value_ae71ae2556d8f7fa0826864785569075f}} 
+{\bfseries Value} (const std\+::string \&s)
+\item 
+\mbox{\Hypertarget{classvibes_1_1Value_a4fceca6cd8a629056555ac5317d8f678}\label{classvibes_1_1Value_a4fceca6cd8a629056555ac5317d8f678}} 
+{\bfseries Value} (const char $\ast$s)
+\item 
+\mbox{\Hypertarget{classvibes_1_1Value_a5ce0c0f704821b6bdf5438814408317d}\label{classvibes_1_1Value_a5ce0c0f704821b6bdf5438814408317d}} 
+{\bfseries Value} (const std\+::vector$<$ \mbox{\hyperlink{classvibes_1_1Value}{Value}} $>$ \&a)
+\item 
+\mbox{\Hypertarget{classvibes_1_1Value_a2c2357e27be37dbece5861bec4ce5023}\label{classvibes_1_1Value_a2c2357e27be37dbece5861bec4ce5023}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Value} (const std\+::vector$<$ T $>$ \&v)
+\item 
+\mbox{\Hypertarget{classvibes_1_1Value_aea7895624e463bcd941f52efef008f93}\label{classvibes_1_1Value_aea7895624e463bcd941f52efef008f93}} 
+{\bfseries Value} (const \mbox{\hyperlink{classvibes_1_1Params}{Params}} \&p)
+\item 
+\mbox{\Hypertarget{classvibes_1_1Value_a09470a0e51cfcdf1d236407f6e72547e}\label{classvibes_1_1Value_a09470a0e51cfcdf1d236407f6e72547e}} 
+bool {\bfseries empty} ()
+\item 
+\mbox{\Hypertarget{classvibes_1_1Value_a90b2be6f0295290fe56e74d583537195}\label{classvibes_1_1Value_a90b2be6f0295290fe56e74d583537195}} 
+std\+::string {\bfseries to\+J\+S\+O\+N\+String} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to hold any type supported by vibes properties system, an to provide J\+S\+ON serialization
+
+A static array that can be cast into
+
+This enables easy intialisation of array of parameters with the brace syntax. Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(Vec<int,4>)\{1,2,3,4\}}
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{vibes_8h}{vibes.\+h}}\end{DoxyCompactItemize}

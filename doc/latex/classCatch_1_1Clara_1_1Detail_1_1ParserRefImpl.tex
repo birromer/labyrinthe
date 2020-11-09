@@ -1,0 +1,61 @@
+\hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl}{}\doxysection{Catch\+::Clara\+::Detail\+::Parser\+Ref\+Impl$<$ DerivedT $>$ Class Template Reference}
+\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl}\index{Catch::Clara::Detail::ParserRefImpl$<$ DerivedT $>$@{Catch::Clara::Detail::ParserRefImpl$<$ DerivedT $>$}}
+Inheritance diagram for Catch\+::Clara\+::Detail\+::Parser\+Ref\+Impl$<$ DerivedT $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a27d9c2a34eb45d92c3a7f07634ea5712}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a27d9c2a34eb45d92c3a7f07634ea5712}} 
+{\footnotesize template$<$typename T $>$ }\\{\bfseries Parser\+Ref\+Impl} (T \&ref, std\+::string const \&hint)
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_ad375302799dae1dd57ae6017bffc35d2}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_ad375302799dae1dd57ae6017bffc35d2}} 
+{\footnotesize template$<$typename LambdaT $>$ }\\{\bfseries Parser\+Ref\+Impl} (LambdaT const \&ref, std\+::string const \&hint)
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_aa0ec81c362f235716e6fee50f745d21d}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_aa0ec81c362f235716e6fee50f745d21d}} 
+auto {\bfseries operator()} (std\+::string const \&description) -\/$>$ DerivedT \&
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a9b4227e549fdf7ac060f32b04691f852}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a9b4227e549fdf7ac060f32b04691f852}} 
+auto {\bfseries optional} () -\/$>$ DerivedT \&
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_af9928e53fd50e79bb2696775fb8f211e}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_af9928e53fd50e79bb2696775fb8f211e}} 
+auto {\bfseries required} () -\/$>$ DerivedT \&
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a7f53be97ad14acf78874b60c506e3264}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a7f53be97ad14acf78874b60c506e3264}} 
+auto {\bfseries is\+Optional} () const -\/$>$ bool
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_adc3237f1191340d9567857efc5ffb82c}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_adc3237f1191340d9567857efc5ffb82c}} 
+auto {\bfseries cardinality} () const -\/$>$ size\+\_\+t override
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a1a227b7a0ccb3ffeb4dd058085074e94}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a1a227b7a0ccb3ffeb4dd058085074e94}} 
+std\+::string const  \& {\bfseries hint} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a04749012641bd3596b1bad797623214e}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a04749012641bd3596b1bad797623214e}} 
+{\bfseries Parser\+Ref\+Impl} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structCatch_1_1Clara_1_1Detail_1_1BoundRef}{Bound\+Ref}} $>$ const \&ref)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a7e63dd6369e1bafc99685b46e3f906ed}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a7e63dd6369e1bafc99685b46e3f906ed}} 
+Optionality {\bfseries m\+\_\+optionality} = Optionality\+::\+Optional
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_afb84f647163ba979e8ebf9a62963100b}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_afb84f647163ba979e8ebf9a62963100b}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structCatch_1_1Clara_1_1Detail_1_1BoundRef}{Bound\+Ref}} $>$ {\bfseries m\+\_\+ref}
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a3553f58bdf9553505824b1218c4520e1}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_a3553f58bdf9553505824b1218c4520e1}} 
+std\+::string {\bfseries m\+\_\+hint}
+\item 
+\mbox{\Hypertarget{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_aba77e6fe7c0455126f4c86bbd3ee59e3}\label{classCatch_1_1Clara_1_1Detail_1_1ParserRefImpl_aba77e6fe7c0455126f4c86bbd3ee59e3}} 
+std\+::string {\bfseries m\+\_\+description}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tests/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

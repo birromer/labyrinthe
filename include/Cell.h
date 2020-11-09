@@ -12,8 +12,21 @@ class Cell {
   public:
     Cell(int x, int y);
     ~Cell();
+    /**
+     * \brief Adds the cell c to the neighbours of the calling cell, and does it the other way around
+     * \note used to the add_neighb(c1,2)
+     * \param c a pointer to a Cell
+     */
     void add_neighb(Cell *c);
+    /**
+     * \brief Adds the cell c1 to the neighbours of the c2 cell, and does it the other way around
+     * \param c1 a pointer to a Cell
+     * \param c2 a pointer to a Cell
+     */
     static void add_neighb(Cell *c1, Cell *c2);
+    /**
+     * \brief Creates a string in the format (m_x,m_y)
+     */
     std::string toString();
 
     friend std::ostream& operator<<(std::ostream& stream, const Cell& c);
